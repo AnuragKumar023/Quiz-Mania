@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e48585;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: sans-serif;
+    /* align-items: center; */
+}
+
+header{
+    text-align: center;
+    background-color: #00aeef;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+.container{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 20px;
+    /* height: 70%; */
+}
+
+.ccc{
+    /* border: 2px solid black; */
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    gap: 10px;
+    /* height: 70%; */
+}
+
+.first{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50vw;
+}
+
+.second{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    font-size: 27px;
+    color: blue;
+    font-family: sans-serif;
+}
+
+.third{
+    border: 2px solid black;
+    background-color: #e6c544;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 90; */
+}
+
+.choice{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #00aeef;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.fque, .sque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #00aeef;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.choice b{
+    background-color: #e6c544;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.fque p, .sque p{
+    /* background-color: #ffbe0b; */
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.sque p:hover{
+    box-shadow: 0px 0px 3px 5px #ffcc00;
+}
+
+.fque p:hover{
+    box-shadow: 0px 0px 3px 5px #ffcc00;
+}
+
+.ch-2 p{
+    margin: 0px 20px 0px 25px;
+}
+
+.timer{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+    /* width: 500px; */
+}
+
+
+#button1{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #0038ef;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px black solid;
+    text-align: center;
+    font-weight: bold;
+    color: #ffcc00;
+    font-family: sans-serif;
+}
+
+
+.timer{
+    font-family: sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #00aeef;
+}
+
+
+
+/* ************ */
+
+
+label{
+    /* background-color: rebeccapurple; */
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+.question{
+      /* background-color: #e6c544; */
+      padding: 10px;
+      display: flex; 
+      border: .1rem dotted black;
+     /* flex-direction: column; */
+     border-radius: 5px;
+}
+
+label{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+input{
+    height: 17px;
+    width: 17px;
+    border: 10px solid black;
+}
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
