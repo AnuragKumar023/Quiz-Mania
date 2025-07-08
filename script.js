@@ -51,20 +51,29 @@ button1.addEventListener('click',()=>{
 
 
 
-    function RandomQuestion(){
-      //     const data = new Set();
-      
-      //     while(data.size!=5){
-      //         const index = Math.floor(Math.random()*questionBank.length);
-      //         data.add(questionBank[index]);
-      //     }
-      
-      //     return [...data];
-            questionBank.sort(()=>Math.random(),0.15);
-      
-            return questionBank.slice(0,`${qvalue}`);
-      
-      };
+function RandomQuestion(){
+    let selectedBank;
+
+    if(qname === "GK/GS"){
+        selectedBank = questionBank2;
+    }
+    else if(qname === "Bollywood"){
+        selectedBank = questionBank3;
+    }
+    else if(qname === "Cricket"){
+        selectedBank = questionBank;
+    }
+    else{
+        selectedBank = questionBank; // default cricket
+    }
+
+    // Randomize
+    selectedBank.sort(()=>Math.random()-0.5);
+
+    // slice qvalue number of questions
+    return selectedBank.slice(0, qvalue);
+}
+
 
 
       const problem = RandomQuestion();
@@ -210,8 +219,8 @@ const questionBank = [
     },
     {
       question: "Which cricketer is known as Boom Boom?",
-      options: ["Afridi", "Gayle", "Dhoni", "Sehwag"],
-      answer: "Afridi"
+      options: ["Bumrah", "Gayle", "Dhoni", "Sehwag"],
+      answer: "Bumrah"
     },
     {
       question: "Who has taken the most wickets in Test cricket?",
@@ -254,7 +263,6 @@ const questionBank = [
       answer: "Red"
     }
 ];
-
 
 
 
