@@ -7,13 +7,14 @@
 body{
     background-color: #e48585;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-family: sans-serif;
     /* align-items: center; */
+    /* overflow-x: hidden; */
 }
 
 header{
@@ -226,4 +227,67 @@ button{
     margin-top: 10px;
     cursor: pointer;
     text-align: center;
+}
+
+
+/* ==================== FINAL RESPONSIVE MEDIA QUERY ==================== */
+
+@media (max-width: 1000px) {
+    .ccc {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .first, .second {
+        width: 100%;
+    }
+
+    .second{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+
+    .choice, .fque, .sque {
+        font-size: 23px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #button1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .timer {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .third {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+
+    .choice, .fque, .sque {
+        font-size: 23px;
+    }
+
+    #button1 {
+        font-size: 18px;
+    }
+
+    .timer {
+        font-size: 20px;
+    }
+    
 }
